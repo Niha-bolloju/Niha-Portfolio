@@ -1,0 +1,283 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 6%;
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #22c55e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+/* Mobile menu button */
+.menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 6%;
+  background: radial-gradient(circle at top left, #1f2937, #020617);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 0.3rem;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #a5b4fc;
+  margin-bottom: 0.2rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 0.8rem;
+}
+
+.hero-desc {
+  max-width: 620px;
+  font-size: 0.95rem;
+  margin-bottom: 1.3rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.primary-btn {
+  background: #22c55e;
+  color: #022c22;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #16a34a;
+}
+
+.secondary-btn {
+  background: transparent;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+.secondary-btn:hover {
+  border-color: #22c55e;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 6%;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+
+.section-text {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  max-width: 720px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.skill-card h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card ul {
+  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-card li {
+  font-size: 0.9rem;
+  list-style: disc;
+  margin-bottom: 0.2rem;
+}
+
+.tech-stack {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Education */
+.edu-card {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+/* Contact */
+.contact-info p {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-info a {
+  color: #22c55e;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 6%;
+  border-top: 1px solid #1f2937;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 6%;
+    background: #020617;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 0.8rem;
+    border: 1px solid #1f2937;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
